@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="assets/superhero.png" type="image/x-icon" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="script.js" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <style type="text/css">
+    * {
+      cursor: url(https://ani.cursors-4u.net/cursors/cur-13/cur1160.ani),
+        url(https://ani.cursors-4u.net/cursors/cur-13/cur1160.png), auto !important;
+    }
+  </style>
+  <a href="https://www.cursors-4u.com/cursor/2018/06/08/hell-yeah-pointer-3.html" target="_blank"
+    title="Hell Yeah Pointer 3"><img src="https://cur.cursors-4u.net/cursor.png" border="0" alt="Hell Yeah Pointer 3"
+      style="position: absolute; top: 0px; right: 0px" /></a>
+
+  <title>Heroes game</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="btns-container">
+      <button class="btn show-heroes" id="show-heroes">Show Heroes</button>
+      <button class="btn start-fight hidden" id="start-fight">
+        Start Fight
+      </button>
+    </div>
+    <div class="heroes-container hidden">
+      <div class="hero-container" id="hero1">
+        <div class="hero-avatar">
+          <img class="hero-img" src="assets/robin.webp" alt="" />
+        </div>
+        <div class="hero-details-container hero-name">Robin</div>
+        <div class="hero-details-container">
+          <div class="icons">
+            <span class="material-symbols-outlined"> shield_with_heart </span>
+            <span>HP ~ 160</span>
+          </div>
+          <div class="icons">
+            <span class="material-symbols-outlined"> swords </span>
+            <span>Attack Points ~ 100</span>
+          </div>
+          <div class="icons">
+            <span class="material-symbols-outlined"> shield </span>
+            <span>Defence Points ~ 90</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-container" id="hero2">
+        <div class="hero-avatar">
+          <img class="hero-img" src="assets/raven.jpeg" alt="" />
+        </div>
+        <div class="hero-details-container hero-name">Raven</div>
+        <div class="hero-details-container">
+          <div class="icons">
+            <span class="material-symbols-outlined"> shield_with_heart </span>
+            <span>HP ~ 100</span>
+          </div>
+          <div class="icons">
+            <span class="material-symbols-outlined"> swords </span>
+            <span>Attack Points ~ 130</span>
+          </div>
+          <div class="icons">
+            <span class="material-symbols-outlined"> shield </span>
+            <span>Defence Points ~ 60</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-container" id="hero3">
+        <div class="hero-avatar">
+          <img class="hero-img" src="assets/beastboy.jpg" alt="" />
+        </div>
+        <div class="hero-details-container hero-name">BeastBoy</div>
+        <div class="hero-details-container">
+          <div class="icons">
+            <span class="material-symbols-outlined"> shield_with_heart </span>
+            <span>HP ~ 150</span>
+          </div>
+          <div class="icons">
+            <span class="material-symbols-outlined"> swords </span>
+            <span>Attack Points ~ 80</span>
+          </div>
+          <div class="icons">
+            <span class="material-symbols-outlined"> shield </span>
+            <span>Defence Points ~ 50</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="show-winner hidden" id="show-winner">
+      <p class="winner-text">The winner is:</p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

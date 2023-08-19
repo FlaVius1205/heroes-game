@@ -1,0 +1,210 @@
+body {
+  background-image: url(assets/titans2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background-color: rgb(0, 0, 0, 0.5);
+}
+
+.btns-container {
+  margin-top: 40px;
+}
+
+.btn {
+  min-width: 200px;
+  font-weight: 900px;
+  font-size: 14px;
+  color: white;
+  background-color: rgba(31, 31, 31, 0.7);
+  padding: 10px 30px;
+  margin: 0;
+  transition: 0.2s;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  letter-spacing: 2px;
+  word-spacing: 0.4px;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: small-caps;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+    rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+    rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+  border-radius: 50px;
+  transition: transform 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.btn:hover {
+  background-color: rgb(0, 0, 0, 0.3);
+  box-shadow: 2px 6px 6px 0px rgba(255, 255, 255, 0.75);
+  color: #ffffff;
+  transition: background-color 0.2s, color 0.2s;
+  transform: scale(1.1);
+  transition: 0.4s;
+}
+
+.show-heroes {
+  margin-right: 50px;
+}
+
+.start-fight {
+  margin-left: 50px;
+}
+
+.heroes-container {
+  display: flex;
+  gap: 50px;
+  margin-top: 40px;
+}
+
+.hero-container {
+  background-color: rgb(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  margin: 40px 0;
+  padding: 40px;
+  border-radius: 10px;
+  justify-content: space-between;
+  transition: 0.7s;
+}
+
+.hero-container:hover {
+  background-color: rgb(0, 0, 0, 0.8);
+  box-shadow: 0px 0px 30px 8px rgba(255, 255, 255, 0.53);
+  transform: scale(1.1);
+}
+
+.clicked {
+  background-color: rgba(53, 53, 53, 0.8);
+  box-shadow: 0px 0px 30px 8px rgba(155, 155, 155, 0.53);
+}
+
+.clicked:hover{
+  transform: scale(1.0);
+  background-color: rgba(53, 53, 53, 0.8);
+  box-shadow: 0px 0px 30px 8px rgba(155, 155, 155, 0.53);
+}
+.hero-avatar {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+.hero-img {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.hero-details-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 5px;
+  color: white;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+  margin-right: 5px;
+}
+
+.icons {
+  display: flex;
+  justify-content: baseline;
+}
+
+.hero-name,
+.show-winner {
+  display: flex;
+  align-items: center;
+  color: white;
+  margin-bottom: 15px;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 21px;
+  letter-spacing: 2px;
+  word-spacing: 0.4px;
+  font-weight: 700px;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: small-caps;
+  text-transform: none;
+}
+
+#show-winner {
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(43, 42, 42, 0.7);
+  margin-top: 10px;
+  padding: 20px 200px;
+  border-radius: 20px;
+  width: 370px;
+  font-size: 30px;
+}
+
+.winner-text {
+  margin: 0;
+  text-align: center;
+
+}
+
+/*
+.d-none {
+  display: none;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.d-block {
+  display: block;
+}
+*/
+
+.hidden {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+@import url("https://fonts.googleapis.com/css?family=BioRhyme+Expanded");
+
+@media (max-width: 1200px) {
+  .heroes-container {
+    width: 70vw;
+    flex-direction: column;
+  }
+
+  .hero-container {
+    flex-direction: row;
+    column-gap: 40px;
+    width: 90%;
+    margin: 20px 0;
+  }
+
+  .hero-details-container {
+    justify-content: center;
+  }
+  .hero-details .hero-name {
+    text-align: left;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 576px) {
+  .heroes-container {
+    width: 95vw;
+  }
+
+  .hero-container {
+    flex-direction: column;
+    width: 90%;
+    margin: 20px 0;
+  }
+}
